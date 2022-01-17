@@ -71,7 +71,7 @@ var displayQuestion = function(){
   quiz.innerHTML = ''
   // creates question element for every question in questions array
   if (questionCounter < questionsArr.length) {
-    
+
     var currentQ = questionsArr[questionCounter];
     // creates h2 element with the name of the current question, append to quiz element
     qText =         makeEl('h2', '', '', currentQ.question, quiz)
@@ -113,6 +113,7 @@ function saveScore() {
 var generateHighScorePage = function() {
   clearHTMLBody();
 
+	explanation =       makeEl('h1', '', 'textCenter', 'Total score = correct-answers(x10) + time-left ', scoreContainer)
   highScoreText = makeEl('p', 'highScoreText', 'bigText box', 'High Scores:', allHighScores)
 
   // Creates an element for each previous high score from local storage

@@ -300,6 +300,20 @@ footer {
   font-size: 10rem;
 }
 
+.bigText {
+
+  margin: 0px;
+  text-align: center;
+  font-size: 10rem;
+}
+
+.textCenter {
+
+  margin: 0px;
+  text-align: center;
+  /* font-size: 10rem; */
+}
+
 @media screen and (max-width: 980px) {
   form .form-group {
     flex: 1 100%;
